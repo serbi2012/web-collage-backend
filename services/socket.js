@@ -7,8 +7,8 @@ app.io = require("socket.io")({
 });
 
 app.io.on("connection", (socket) => {
-  socket.on("user-send", (data) => {
-    socket.broadcast.emit("user-send", data);
+  socket.on("shareScrapContent", (data) => {
+    socket.broadcast.emit("shareScrapContent", data);
   });
 });
 
