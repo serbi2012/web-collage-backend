@@ -1,16 +1,22 @@
 {
   "name": "web-collage-server",
-  "version": "0.0.0",
+  "version": "0.2.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
     "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
     "debug": "~2.6.9",
+    "dotenv": "^16.0.3",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
+    "mongoose": "^6.7.2",
+    "morgan": "~1.9.1",
+    "socket.io": "^4.5.3"
   }
 }
