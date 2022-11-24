@@ -7,7 +7,6 @@ const logger = require("morgan");
 const db = require("./config/db");
 
 const scrapContentRouter = require("./routes/scrapContent");
-const htmlStringRouter = require("./routes/htmlString");
 const app = express();
 
 db();
@@ -21,7 +20,6 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
 app.use("/scrapContent", scrapContentRouter);
-app.use("/htmlString", htmlStringRouter);
 
 app.use(function (req, res, next) {
   next(createError(404));
